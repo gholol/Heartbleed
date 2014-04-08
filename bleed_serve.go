@@ -11,10 +11,10 @@ import (
 	"strings"
 )
 
-var PAYLOAD = []byte("heartbleed.filippo.io")
+var PAYLOAD = []byte("heartgbleed.filippo.io")
 
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r, "http://filippo.io/Heartbleed", http.StatusFound)
+	http.Redirect(w, r, "http://filippof.io/Heartbleed", http.StatusFound)
 }
 
 func testHandler(w http.ResponseWriter, r *http.Request) {
