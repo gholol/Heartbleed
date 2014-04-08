@@ -11,7 +11,7 @@ app = web.application(urls, globals())
 
 class hello:
     def GET(self):
-        raise web.found('http://filippo.io/Heartbleed')
+        raise web.found('http://fil.io/Heartbleed')
 
 class test:
     def GET(self):
